@@ -28,12 +28,6 @@ file(GLOB SOURCE_FILES
    ${CMAKE_SOURCE_DIR}/src/*.hpp
    ${CMAKE_SOURCE_DIR}/src/*.cpp
    )
-# set(SOURCE_FILES
-#    ${CMAKE_SOURCE_DIR}/src/*.h*
-#    ${CMAKE_SOURCE_DIR}/*.hpp*
-#    ${CMAKE_SOURCE_DIR}/*.cpp*
-#    # helloWorldCmd.cpp
-# )
 
 # set linking libraries
 set(LIBRARIES
@@ -42,7 +36,6 @@ set(LIBRARIES
 
 )
 
-# set_target_properties(${PROJECT_NAME} PROPERTIES VS_DEBUGGER_COMMAND "maya.exe")
 set_property( DIRECTORY PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 
 # Build plugin
