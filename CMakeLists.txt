@@ -41,4 +41,6 @@ set_property( DIRECTORY PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
 # Build plugin
 build_plugin()
 set_target_properties(${PROJECT_NAME} PROPERTIES VS_DEBUGGER_COMMAND "maya.exe")
+set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/export:initializePlugin /export:uninitializePlugin")
+set(CMAKE_CXX_FLAGS_DEBUG "/ZI")
 
